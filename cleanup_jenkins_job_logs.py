@@ -3,6 +3,9 @@ import sys
 import os, glob
 import requests
 
+#simply script to authenticate with Jenkins via CLI, make tree of all jobs/branches and delete logs older than last 30 number, by this script you can save a lot of space 
+#please remember set jenkins-cli.jar in location, in this version in /tmp
+
 server = jenkins.Jenkins('http://<192.168.0.1>:8080', username='<your_username>', password='<your_password>')
 
 def project_list():
